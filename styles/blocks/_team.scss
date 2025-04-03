@@ -9,9 +9,13 @@
   border-radius: rem(100);
 
   @include laptop {
-    --personImageSize: ${rem(50)};
+    --personImageSize: #{rem(50)};
 
     padding: rem(8);
+  }
+
+  @include tablet {
+    --personImageSize: #{rem(40)};
   }
 
   &__person {
